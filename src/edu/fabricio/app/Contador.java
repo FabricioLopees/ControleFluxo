@@ -23,6 +23,13 @@ public class Contador{
 				throw new ParametrosInvalidosException();
 			}
 			
+			// Executa teste se os parâmetros são iguais
+			
+			if(primeiroNumero == segundoNumero) {
+				System.out.println("Parâmetros iguais!");
+				System.out.println("Tente novamente...");
+			}
+			
 			// Calcula a difença entre os números digitados pelo usuário e imprime
 			// a quantidade de vezes que corresponde a diferença
 			

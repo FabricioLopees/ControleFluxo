@@ -22,19 +22,24 @@ public class Contador{
 			if(primeiroNumero > segundoNumero) {
 				throw new ParametrosInvalidosException();
 			}
+			
+			// Calcula a difença entre os números digitados pelo usuário e imprime
+			// a quantidade de vezes que corresponde a diferença
+			
+			int diferenca = segundoNumero - primeiroNumero;
+			
+			for(int x = 1; x <= diferenca; x++) {
+				System.out.println("Imprimindo o número "+x);
+			}
+			
 		} catch (ParametrosInvalidosException parametrosInvalidos) {
 			parametrosInvalidos.dispararErro();
 		} catch (InputMismatchException e) {
 			System.out.println("Tipo de dado inválido! Somente numéricos do tipo inteiro.");
 			System.out.println("Tente novamente...");
+		} finally {
+			System.out.println("Programa encerrado!");
 		}
 		
-		
-		/*
-		 * // TEST
-		 * 
-		 * System.out.println("Os número digitados são:"+primeiroNumero+" e "
-		 * +segundoNumero);
-		 */
 	}
 }

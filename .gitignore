@@ -1,0 +1,6 @@
+# Uncomment all to use
+
+.classpath
+.project
+.settings/
+bin/

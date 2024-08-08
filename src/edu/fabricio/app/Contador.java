@@ -26,8 +26,7 @@ public class Contador{
 			// Executa teste se os parâmetros são iguais
 			
 			if(primeiroNumero == segundoNumero) {
-				System.out.println("Parâmetros iguais!");
-				System.out.println("Tente novamente...");
+				System.out.println("Parâmetros iguais! Tente novamente...");
 			}
 			
 			// Calcula a difença entre os números digitados pelo usuário e imprime
